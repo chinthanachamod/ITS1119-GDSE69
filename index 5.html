@@ -1,0 +1,619 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Prt-02</title>
+
+    <style>
+        /*ul>li:nth-child(3) {          // Child Combinator
+            color:hotpink;
+        }*/
+
+        /*ul li {                       // Decendent Combinator
+            color : green;
+        }*/
+
+        /*h4+div {                        !* Adjecent Combinator*!
+            color: red;
+        }*/
+
+        /*h4~div {                        !*General Siblings Combinator*!
+            color: blue;
+        }*/
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Internet Technologies</h1>
+            <ul>
+
+                <div>
+                    <h2>Hello</h2>
+                    <li>Sri Lanka</li>
+                    <h4>Hi</h4>
+                </div>
+
+
+                <li>HTML</li>
+                <li>
+                    CSS
+                    <ol>
+                        <li>Inline CSS</li>
+                        <li>Internal CSS</li>
+                        <li>External CSS</li>
+                    </ol>
+                </li>
+                <li>Bootstrap</li>
+                <li>JS</li>
+                <li>JQuery</li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>-->
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.png"> <!-- Favicon -->
+
+    <title>Internet technologies</title>
+
+    <style>
+
+        /*================================================================================================================================*/
+
+       /* section:nth-child(2)>main>ul>li:nth-child(2){
+            color:red;
+            font-weight: bold;
+        }*/
+
+        /*================================================================================================================================*/
+
+       /*ul>li:nth-child(1)>ol>li:nth-child(1){
+           color:red;
+       }
+
+       ul>li:nth-child(1)>ol>li:nth-child(2){
+           color:yellow;
+       }
+
+       ul>li:nth-child(1)>ol>li:nth-child(3){
+           color:deeppink;
+       }
+       ul>li:nth-child(1)>ol>li:nth-child(4){
+           color:deeppink;
+       }*/
+
+        /*================================================================================================================================*/
+
+
+       /*ul>li:nth-child(1)>ol>li {               !*ul>li:first-child li { color: deeppink }*!
+           color: deeppink;
+       }
+
+       ul>li:nth-child(1)>ol>li:nth-child(1){            !*ul>li:first-child li:first-child { color: red }*!
+           color:red;
+       }
+
+       ul>li:nth-child(1)>ol>li:nth-child(2){
+           color:gold;
+       }
+
+       ul>li:nth-child(2)>ol>li:first-child>ol>li:nth-child(3)>ul>li:nth-child(2) {
+           color: blue;
+       }
+
+        ul>li:nth-child(2)>ol>li:first-child>ol>li:nth-child(5) {                   !*ul>li:nth-child(2)>ol>li:first-child>ol>li:last-child { color: green }*!
+            color: green;
+        }
+*/
+
+        /*================================================================================================================================*/
+                                                        /*CSS CASCADE*/
+            /*
+
+            !*(0,0,0,0)*!
+            * {
+                color: red;
+            }
+
+            !*(0,0,1,0)*!
+            button {
+                color: gold;
+            }
+
+            !*(0,1,0,0)*!
+            .btn {
+                color: green!important;
+            }
+
+            !*(1,0,0,0)*!
+            #mybtn {
+                color: mediumpurple;
+            }
+
+            !*(1,0,1,1)*!
+            ul>li:first-child {
+                color: red;
+            }
+
+            !*(0,0,0,2)*!
+            ul>li {
+                color: hotpink;
+            }
+            */
+
+
+        /*================================================================================================================================*/
+
+       /* div:first-child{
+            background-color: red;
+            width: 1000px;
+            height: 100px;
+        }
+
+        div:nth-child(2) {
+            background-color: blue;
+            width: 50vw;
+            height: 50vh;
+        }*/
+
+
+        /*================================================================================================================================*/
+
+/*
+        main {
+            font-size: 10px;
+        }
+
+        section {
+            font-size: 50px;
+        }
+
+        section>div {
+            font-size: 2em;     !* 2em = 100px / 60px ?     1em = 50px  ?*!
+        }
+
+        #mydiv {
+            width: 200px;
+            height: 100px;
+            background-color: gold;
+        }
+
+        #mydiv>div  {
+            background-color: red;
+            width: 50%;
+            height: 50%;
+        }
+
+        div:first-child {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+
+        div:nth-child(2) {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(111, 235, 66);
+        }
+
+        div:nth-child(3) {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(252, 102, 3, 1);
+        }
+
+        div:nth-child(4) {
+            width: 200px;
+            height: 100px;
+            background-color: #5334eb;
+        }
+
+        div:nth-child(5) {
+            width: 200px;
+            height: 100px;
+            background-color: hsl(291, 85%, 34%);
+        }
+
+        div:nth-child(6) {
+            width: 200px;
+            height: 100px;
+            !*background: linear-gradient(red, yellow);*!
+            !*background: linear-gradient(red, yellow, blue);*!
+            !*background: linear-gradient(to right, red, yellow);*!
+
+            background: linear-gradient(to bottom, rgba(30,87,153,0) 0%,rgba(30,87,153,1) 19%,rgba(30,87,153,0.99) 20%,rgba(35,110,182,0.8) 34%,rgba(41,137,216,0.8) 50%,rgba(34,107,178,0.8) 68%,rgba(30,87,153,0.98) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+        }*/
+
+
+        /*================================================================================================================================*/
+                                                               /* BOX MODEL*/
+
+        /*div {
+            font-weight: bold;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 5px solid red;
+            padding: 30px;
+            margin: 20px;
+        }*/
+
+
+        /*================================================================================================================================*/
+                                                                /* CSS POSITIONING */
+
+
+        /*#div1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+            !*right: ;*!
+            left: 300px;
+            top: 300px;
+            !*bottom: ;*!
+        }
+
+        section {
+            background: lightyellow;
+            width: 600px;
+            height: 400px;
+            border: 5px solid green;
+
+            position: relative;
+        }
+
+        section>div {
+            background: red;
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            position: absolute;
+            right: 0;
+        }
+
+        section>div:nth-child(2) {
+            background: blue;
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            position: absolute;
+            left: 0;
+        }
+
+        section>div:nth-child(3) {
+            background: orangered;
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        section>div:nth-child(4) {
+            background: deeppink;
+            width: 100px;
+            aspect-ratio: 1/1;
+
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        */
+
+
+        /*----------------------------------------------------------- Circle into Circle ----------------------------------------------------------------------*/
+
+
+        /**{
+            margin: 0;
+            padding: 0;
+        }
+        .first {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .big-circle {
+            background: cornflowerblue;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small-circle {
+            background: hotpink;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+        }*/
+
+        /*------------------------------------------------------------Flower by Circles---------------------------------------------------------------------*/
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .first {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .big-circle {
+            background: red;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .small-circle {
+            background: blue;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+        }
+
+        .circle1 {
+            background: darkorange;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            right: 80%;
+        }
+
+        .circle2 {
+            background: darkorange;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            left: 80%;
+        }
+
+        .circle3 {
+            background: darkorange;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            top: 80%;
+        }
+
+        .circle4 {
+            background: darkorange;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            bottom: 80%;
+        }
+
+        .circle5 {
+            background: yellow;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            right: 80%;
+            left: 69%;
+            top: 69%;
+        }
+
+        .circle6 {
+            background: yellow;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            right: 80%;
+            left: 69%;
+            bottom: 69%;
+        }
+
+        .circle7 {
+            background: yellow;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            right: 80%;
+            top: 70%;
+        }
+
+
+
+    </style>
+
+<body>
+
+<!--<section>
+    <main>
+        <h1>IJSE</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut debitis doloremque, doloribus dolorum exercitationem iusto labore officiis pariatur provident unde! Atque commodi deleniti mollitia totam voluptatem? Aspernatur non qui totam!</p>
+        <ul>
+            <li>DEP</li>
+            <li>CMJD</li>
+            <li>GDSE</li>
+        </ul>
+    </main>
+</section>
+<section>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <main>
+        <h1>Java</h1>
+        <ul>
+            <li>Exam 1</li>
+            <li>Exam 2</li>
+            <li>Exam 3</li>
+        </ul>
+    </main>
+</section>-->
+
+
+        <!--================================================================================================================================-->
+
+
+<!--<ul>
+    <li>
+        Java
+        <ol>
+            <li>Java Basics</li>
+            <li>JavaEE</li>
+            <li>Java Spring Boot</li>
+            <li>MySql</li>
+        </ol>
+    </li>
+    <li>
+        UI Technologies
+        <ol>
+            <li>HTML
+                <ol>
+                    <li>Introduction to HTML</li>
+                    <li>HTML Text Formatting</li>
+                    <li>
+                        HTML Multimedia
+                        <ul>
+                            <li>Add Images</li>
+                            <li>Add Videos</li>
+                            <li>Add Audios</li>
+                        </ul>
+                    </li>
+                    <li>HTML Forms</li>
+                    <li>HTML Tables</li>
+                </ol>
+            </li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+    </li>
+    <li>
+        AWS and ML
+    </li>
+</ul>-->
+
+        <!--================================================================================================================================-->
+                                                                    <!--CSS CASCADE-->
+
+<!--
+     &lt;!&ndash;(1, 0, 0, 0)&ndash;&gt;
+    <button id="my button" class="btn" >Click Me</button>
+
+    <ul>
+        <li>GDSE</li>
+        <li>CMJD</li>
+        <li>DEP</li>
+    </ul>-->
+
+
+        <!--================================================================================================================================-->
+
+    <!--<div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>-->
+
+        <!--================================================================================================================================-->
+                                                                    <!--BOX MODEL-->
+
+   <!-- <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    </div>
+    <main>
+        <section>
+            &lt;!&ndash;IJSE
+            <div>Internet Technologies</div>&ndash;&gt;
+        </section>
+    </main>-->
+
+
+<!--================================================================================================================================-->
+                                                                    <!--CSS POSITIONING-->
+
+    <!--    <div id="div1"></div>-->
+
+
+    <!--<section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>-->
+
+
+<!---------------------------------------------------------- Circle into Circle ---------------------------------------------------------------------------------------->
+
+<!--<section class="first">
+    <div class="big-circle">
+        <div class="small-circle"></div>
+    </div>
+</section>-->
+
+
+<!---------------------------------------------------------- Flower by Circles ---------------------------------------------------------------------------------------->
+
+<section class="first">
+    <div class="big-circle">
+        <div class="small-circle"></div>
+
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="circle4"></div>
+
+        <div class="circle5"></div>
+        <div class="circle6"></div>
+        <div class="circle7"></div>
+        <div class="circle8"></div>
+
+    </div>
+</section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+            /*----------------------------Transform------------------------------------*/
+
+            div {
+                /*width: 300px;
+            aspect-ratio: 1/1;
+            background-image: url("assets/imoji/imoji 01.webp");
+            background-size: cover;*/
+
+                /*!*----- Rotate -----*!
+                transform: rotate(45deg);
+                transform: rotateZ(45deg);
+                transform: rotateY(45deg);
+                transform: rotateZ(45deg);*/
+
+                /*----- Translate -----*/
+                /*transform: translate(10px, 20px);
+                transform: translateX(10px);
+                transform: translateY(20px);*/
+
+                /*----- Scale -----*/
+                /*transform: scale(0.5);
+                transform: rotate(50deg);*/
+
+                /*----- Skew -----*/
+                /*transform: skew(10deg);
+                transform: skewX(10deg);
+                transform: skewY(10deg);*/
+            }
+
+            /*=========================================== Transition and Animation ===============================================*/
+
+
+            /*--------------------------Transition--------------------------------------*/
+
+            /*div {
+                width: 200px;
+                height: 200px;
+                background: lightblue;
+                border: 5px solid darkblue;
+
+                !*transition-property: background, border, transform;
+
+                transition-duration: 3s;
+
+                transition-timing-function: ease;*!
+
+                transition: background, border, transform 3s linear;
+            }
+
+            div:hover {
+                background: yellow;
+                border: 5px solid red;
+                !*border-radius: 100%;*!
+
+                transform: rotate(360deg);
+
+                !*transition-delay: 5s;*!
+
+            }*/
+
+            /*-------------------------------Animation------------------------------------------*/
+
+            div {
+                width: 200px;
+                height: 200px;
+                background: yellow;
+
+                /*animation: my-animation 10s;*/
+                animation-name: my-animation;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;          /*animation eka repeat wenn one wara ganana*/
+                animation-timing-function: linear;
+
+                /*animation-direction: reverse;*/                 /*anthima keyframe eken patan aran palaweni keyframe eka dakwa enawa*/
+                /*animation-direction: alternate;*/         /*1st keyframe eken patan aran anthima keyframe wenkm ghn ayeth apassata enwa*/
+                /*animation-direction: alternate-reverse;*/     /*anthima keyframe eken patan aran 1st keyframe wenkm ghn ayeth anthima ekata enwa*/
+
+                animation-play-state: running;            /*animate wenna tika welawak (5s) delay welawk ynw*/
+
+                animation-delay: 5s;
+            }
+
+            @keyframes my-animation {
+                from {
+                    background: blue;
+                }
+                to {
+                    background: red;
+                    margin-left: 500px;
+                    transform: rotate(360deg);
+                }
+            } 
+
+            /*@keyframes my-animation {
+                0% {
+                    background: blue;
+                }
+                25% {
+                    background: red;
+                }
+                50% {
+                    background: yellow;
+                }
+                75% {
+                    background: purple;
+                }
+                100% {
+                    background: lawngreen;
+                }
+            }*/
+
+
+    </style>
+</head>
+<body>
+
+<!-------------------------------Transform------------------------------------------>
+
+<!--<div></div>-->
+
+<!-------------------------------Transition------------------------------------------>
+
+<!--<div></div>-->
+
+<!-------------------------------Animation------------------------------------------>
+
+<div></div>
+
+</body>
+</html>

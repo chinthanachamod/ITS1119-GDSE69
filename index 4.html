@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <link rel="stylesheet" href="../assets/styles/style.css">
+
+    <style>
+        /*h2 {
+            color: aqua;
+        }
+
+        #topic {
+            background: palegreen;
+        }
+
+        .my-topic {}*/
+
+        /** {
+            color: brown;
+        }*/
+
+
+        /*
+
+        [href] {
+            color: darkorange;
+        }
+
+        [href ^= "https"]{          <!-- ^= eka danne mula thyna reference eken select/search krgnn onnm -->
+            font-weight: bold;
+        }
+
+        [href $=".com"]{            <!-- $= eka danne aga thyna reference eken select/search krgnn onnm -->
+            font-style: italic;
+        }
+
+        [href *= "ijse"] {          <!-- *= eka danne "ijse" kiyala thyna reference okkoma select karaganna -->
+            color: palegreen;
+        }
+
+        [href ~= "ijse"] {          <!-- ~= eka danne "ijse" kiyala wachanayak thynwd kyl balanna -->
+            color: red;
+            }
+
+        h2 [class] {                <!-- h2 kiayala thyna element ekek thynwnm eyt class kyl attributeekk thynwnm eyt color eka add karanna -->
+            background: yellow;
+        }
+
+        */
+
+
+        /* -------------------------------- PSEUDO CLASS SELECTOR --------------------------------*/
+
+        /*h1:hover {
+            color: red;
+        }
+
+        h1:active {
+            color: mediumpurple;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:visited {
+            color: orangered;
+        }
+
+        input:focus {
+            background-color: yellow;
+         }*/
+
+
+
+        /* Select via the element tree structure*/
+
+       /* li:first-child {
+            color: black;
+            background: gold;
+        }
+
+        li:nth-last-child() {
+            color: green;
+            background: orangered;
+        }
+
+        li:nth-last-child(2) {
+            color: White;
+            background: saddlebrown;
+        }
+
+        li:last-child {
+            color: white;
+            background: mediumblue;
+        }*/
+
+
+
+        /*=============== Very Important ================= */
+
+
+        /*li:nth-child(odd) {           <!-- apply to Odd number places -->
+            color: hotpink;
+            background: lightpink;
+        }*/
+
+        /*li:nth-child(even) {          <!-- apply to Even number places -->
+            color: hotpink;
+            background: lightpink;
+        }
+*/
+
+        /*li:nth-child(n+4) {       <!-- if (n=0,1,2,3,...) , n+4 = ... + 4 = selected rows -->
+            color: hotpink;
+            background: lightpink;
+        }*/
+
+        /*li:nth-child(3n-1) {      <!-- if (n=0,1,2,3,...) , 3n-1 = ... - 1 = selected rows -->
+            color: hotpink;
+            background: lightpink;
+        }*/
+
+        /*li:nth-child(3n+1) {      <!-- if (n=0,1,2,3,...) , 3n+1 = ... + 1 = selected rows -->
+            color: hotpink;
+            background: lightpink;
+        }*/
+
+        /*li:nth-child(4n) {      <!-- if (n=0,1,2,3,...) , 4n = ... = selected rows -->
+            color: black;
+            background: lightpink;
+        }*/
+
+
+        /* add a content before the content */
+        h1::before {
+            content: "😉";
+
+        }
+
+        h1:hover::before {
+            background:hotpink;
+        }
+
+        /* add a content after the content */
+        h1::after {
+            content: "⚡";
+        }
+
+        p::first-letter {
+            font-weight: bold;
+            color: red;
+        }
+
+        p::first-line {
+            background: yellow;
+        }
+
+        input::placeholder {
+            color: green;
+            font-weight: bold;
+
+        }
+
+
+        input[type="file"]::file-selector-button {
+            background: blue;
+            color: white;
+        }
+
+        p::selection {                    <!-- p dammoth paragraph ekata wthry, nattam mulu site ekatama valued -->
+            background: hotpink;
+        }
+
+        li::marker {
+            content: "⚡";
+        }
+
+        /*-------------------- grouping selector --------------------*/
+        h1, #my-topic, #my-class, ul {
+            font-weight: bold;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!--<h1 style="color: rebeccapurple">WELCOME TO IJSE </h1>
+    <h2 id="topic">WELCOME TO INTERNET TECHNOLOGY </h2>
+    <h3 >WELCOME TO SOFTWARE ENGINEERING </h3>
+
+<br><br><br>
+
+    <p class="my-topic">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci aliquam amet aperiam atque dolorum ea explicabo facere harum inventore iure iusto laboriosam nam non numquam quia sunt tenetur, veritatis!
+    </p>
+
+    <a href="https://ijse.lk">IJSE 1</a>  <br>
+    <a href="http://ijse.lk">IJSE 2</a>   <br>
+    <a href="https://abc.com">ABC</a>   <br>
+    <a  href="https://hiru.com">Hiru</a>   <br>
+    <a href="http://ijsestudentslanka.lk">IJSE 2</a>   <br>
+
+<h1>IJSE</h1>
+
+    <a href="https://sirasatv.lk">Sirasa TV</a> <br>
+    <a href="https://hirutv.lk">Hiru TV</a>     <br>
+    <a href="https://supremetv.lk">Supreme TV</a>   <br>
+
+    <input type="text" placeholder="Enter Your Name">-->
+
+
+    <h1>Welcome to IJSE</h1>
+
+    <p class="my-topic">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at cupiditate, delectus eius enim est et fuga harum iusto laboriosam laudantium magni maxime, minima nam neque perspiciatis, quod sint sunt.
+    </p>
+
+
+    <input type="text" placeholder="Enter Your Name">
+
+    <input type="file">
+
+
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+    </ul>
+
+
+
+</body>
+</html>

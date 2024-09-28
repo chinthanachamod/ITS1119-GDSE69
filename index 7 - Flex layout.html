@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex Layout</title>
+
+    <style>
+
+        /*(01)*/
+
+        /*section {
+            display: flex;          !*div eken block type eken dunna eka horizontally hadala denawa*!
+            !*flex-direction: column;    !*row*!*!
+            flex-direction: row-reverse;        !*row-reverse*!
+        }
+
+        section > div{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: lightpink;
+            border: 2px solid red;
+        }*/
+
+        /*====================================(02)============================*/
+
+        /*section {
+            width : 500px;
+            height: 500px;
+            border: 2px solid red;
+
+            display: flex;
+            justify-content: center;    !*center, start, end*!
+            align-items: center;     !*center, start, end*!
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: #26ace0;
+        }*/
+
+        /*================================(03)=================================================*/
+
+        /*section {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+
+            display: flex;
+            justify-content: space-between;     !*space-between, space-around, space-evenly*!
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: #26ace0;
+        }*/
+
+        /*================================(04)=================================================*/
+
+        /*section {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+
+            display: flex;
+            justify-content: space-around;     !*space-between, space-around, space-evenly*!
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: #26ace0;
+            border: 2px solid red;
+            align-self: center;
+        }*/
+
+        /*========================================(05)========================*/
+
+        section {
+            width : 100vw;
+            height: 350px;
+            border: 2px solid red;
+
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        section > div {
+            width: 100px;
+            height: 100px;
+            background: #26ace0;
+            border: 2px solid white;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        section > div:first-child {
+
+        }
+
+        section > div:nth-child(2) {
+            background: lightsalmon;
+            align-self: center;
+        }
+
+        section > div:nth-child(3){
+            background: purple;
+            align-self: end;
+        }
+
+        section > div:nth-child(4) {
+            background: chocolate;
+            align-self: center;
+        }
+
+        section > div:nth-child(5) {
+            background: rebeccapurple;
+        }
+
+        section > div:nth-child(6) {
+            background: saddlebrown;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--(01)-->
+
+<!--<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</section>-->
+
+<!--========================(02)==================================-->
+
+<!--<section>
+    <div></div>
+</section>-->
+
+<!--=============================(03)=======================================-->
+
+<!--<section>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+</section>-->
+
+<!--=============================(04)=======================================-->
+
+<!--<section>
+    <div></div>
+</section>-->
+
+<!--================================(05)================================-->
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+</body>
+</html>

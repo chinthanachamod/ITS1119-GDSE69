@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <!-- ========== Google Font ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Media Query CSS  Portfolio</title>
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        header {
+            width: 100vw;
+            height: 100px;
+            background: #06011d;
+            top: 0;
+            position: fixed;
+            z-index: 100;
+        }
+
+        header>section>img {
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            margin: auto;
+            position: absolute;
+        }
+
+        header>nav {
+            color: aqua;
+            height: fit-content;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        header>nav>ul {
+            list-style: none;
+        }
+
+        header>nav>ul>li {
+            display: inline;
+            margin: 0px 10px;
+        }
+
+        body>footer {
+            background: gray;
+        }
+
+        footer>div {
+            color: white;
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        #main {
+            width: 100vw;
+            position: relative;
+            top: 150px;
+        }
+
+        #main>section:nth-child(1)>h1 {
+            font-family: "Merriweather", serif;
+            font-weight: 900;
+            font-size: 7vw;
+            font-style: normal;
+            position: absolute;
+            top: 10px;
+            left: 200px;
+            text-align: center;
+        }
+
+        #main>section:nth-child(2)>img {
+            width: 35vw;
+            height: 35vw;
+            position: absolute;
+            right: 50px;
+        }
+
+        @media all and (max-width: 500px) {
+            header>section>img {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                position: absolute;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+<!-- ========== Header Section ==========-->
+<header>
+    <!-- ========== Image Section ==========-->
+    <section>
+        <img src="assets/logo/ijse.png" width="100px" title="Ijse" alt="Ijse">
+    </section>
+
+    <!-- ========== Navigation Bar ==========-->
+
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>PROJECT</li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ========== Hero Section ==========-->
+
+<main id="main">
+
+    <!-- ========== Content Section ==========-->
+
+    <section>
+        <h1>WELCOME<br>to<br>My World</h1>
+
+        <br><br>
+
+        <p>
+            I am
+
+            <h4>Chinthana Chamod</h4>
+        </p>
+    </section>
+
+    <!-- ========== Content Section ==========-->
+
+    <section>
+        <img src="assets/images/content image 01.jpg" title="image" alt="image">
+    </section>
+</main>
+
+<!-- ========== Footer Section ==========-->
+
+<footer>
+    <div>Developed by IJSE</div>
+</footer>
+</body>
+</html>
